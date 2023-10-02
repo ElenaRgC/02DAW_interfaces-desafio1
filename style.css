@@ -1,0 +1,123 @@
+/* Estilos globales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+img {
+    width: 100;
+    display: block;
+}
+
+/* Estilos para el header */
+
+header > * {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera {
+    background-color: #336699;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.menu {
+    background-color: #6699CC;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+.sobre-nosotros {
+    background-color: #F4A460;
+}
+
+/* Estilos para la sección "Productos" */
+.productos {
+    background-color: #87CEEB; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    text-align: center;
+}
+
+/* Estilos para la sección "La Piel" */
+.la-piel {
+    background-color: #FFD700; /* Gold */
+    text-align: center;
+}
+
+/* Estilos para la sección "Tiendas" */
+.tiendas {
+    background-color: #98FB98; /* Pale Green */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para la lista de tiendas */
+.tiendas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    text-align: center;
+}
+
+/* Estilos para la sección "Copyright" */
+footer .copyright {
+    background-color: #333;
+    text-align: center;
+}
+
+/* Estilos para la sección "Política de Privacidad y Cookies" */
+footer .politicas {
+    background-color: #444;
+    text-align: center;
+}
+
+footer .politicas a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Estilos para la sección "Mapa del Sitio" */
+footer .mapa-sitio {
+    background-color: #555; 
+    text-align: center;
+    padding: 20px;
+}
+
+
+.mapa-sitio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mapa-sitio a {
+    text-decoration: none;
+}
+
