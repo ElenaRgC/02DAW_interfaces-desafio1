@@ -1,0 +1,45 @@
+/* Estilos para la sección "Sobre Nosotros" */
+.sobre-nosotros {
+    background-color: #F4A460;
+}
+
+/* Estilos para la sección "Productos" */
+.productos {
+    background-color: #87CEEB; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta {
+    flex: 1;
+    text-align: center;
+    margin: 1rem auto;
+
+    display: grid;
+    justify-content: center;
+}
+
+.tarjeta img {
+    max-width: 250px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+/* Estilos para la sección "La Piel" */
+.la-piel {
+    background-color: #FFD700; /* Gold */
+    text-align: center;
+}
+
+/* Estilos para la sección "Tiendas" */
+.tiendas {
+    background-color: #98FB98; /* Pale Green */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para la lista de tiendas */
+.tiendas ul {
+    list-style-type: none;
+    padding: 0;
+}
