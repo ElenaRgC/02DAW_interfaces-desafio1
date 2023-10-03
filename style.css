@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Playfair+Display:wght@400;700&display=swap");
+
+:root {
+    --color-fondo: #f9fafb;
+    --color-principal: #ffcdb3;
+    --color-secundario: #f5f2d6;
+    --color-acento: #600b15;
+    --color-texto: #1a281f;
+}
+
 /* Estilos globales */
 
 * {
@@ -7,6 +17,11 @@
 body {
     margin: 0;
     min-height: 100vh;
+    line-height: 1.6rem;
+
+    font-family: "Libre Baskerville", serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
 }
 
 img {
@@ -18,6 +33,53 @@ a:has(img) {
     width: fit-content;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.45rem;
+}
+
+h2 {
+    font-size: 1.95rem;
+}
+
+h3 {
+    font-size: 1.55rem;
+}
+
+button {
+    border: none;
+    padding: 0.5rem 1.5rem;
+
+    font-size: 1.2rem;
+    font-family: "Libre Baskerville", serif;
+
+    background-color: var(--color-principal);
+
+    cursor: pointer;
+}
+
+button.secundario {
+    background-color: var(--color-secundario);
+}
+
+input[type="search"] {
+    background-color: white;
+    background-image: url("img/icono-lupa.svg");
+    background-size: 25px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
 /* Estilos para el header */
 
 header > * {
@@ -26,7 +88,10 @@ header > * {
 }
 
 .cabecera {
-    background-color: #336699;
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
+
+    padding-inline: 5rem;
 }
 
 .logo {
@@ -34,25 +99,60 @@ header > * {
     height: 100px;
 }
 
-.menu {
-    background-color: #6699CC;
-}
-
 nav ul {
     list-style-type: none;
 }
 
+.menu {
+    width: 98%;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+
+    text-transform: uppercase;
+
+    background-color: rgb(238, 238, 238);
+    box-shadow: #ccc 1px 1px 2px;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .menu li {
     display: inline;
+    /* padding-inline: 0.25rem; */
+}
+
+.menu li::after {
+    content: " |";
+    padding-inline: 0.75rem;
+
+    opacity: 0.5;
+}
+
+.menu li:last-child::after {
+    content: "";
 }
 
 .menu a {
     text-decoration: none;
+    color: var(--color-texto);
+}
+
+/* Estilos del main */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-block: 4rem;
 }
 
 /* Estilos para el footer */
 footer {
-    background-color: #333;
+    background-color: var(--color-acento);
+    color: var(--color-fondo);
     text-align: center;
 
     display: flex;
@@ -60,14 +160,8 @@ footer {
     align-items: center;
 }
 
-footer .copyright {
-    background-color: #333;
-    text-align: center;
-}
-
-footer .politicas {
-    background-color: #444;
-    text-align: center;
+footer a {
+    color: var(--color-fondo);
 }
 
 footer .politicas a {
@@ -76,7 +170,6 @@ footer .politicas a {
 }
 
 footer .mapa-sitio {
-    background-color: #555; 
     text-align: center;
 
     flex-basis: 40%;
@@ -93,4 +186,3 @@ footer .mapa-sitio {
 .mapa-sitio a {
     text-decoration: none;
 }
-

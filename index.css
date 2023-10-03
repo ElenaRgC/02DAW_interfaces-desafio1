@@ -1,11 +1,16 @@
 /* Estilos para la sección "Sobre Nosotros" */
 .sobre-nosotros {
-    background-color: #F4A460;
+    display: flex;
+
+    align-items: center;
+}
+
+.sobre-nosotros div {
+    text-align: center;
 }
 
 /* Estilos para la sección "Productos" */
 .productos {
-    background-color: #87CEEB; 
     display: flex;
     justify-content: space-around;
 }
@@ -19,6 +24,10 @@
     justify-content: center;
 }
 
+.tarjeta a {
+    margin: 0 auto;
+}
+
 .tarjeta img {
     max-width: 250px;
     object-fit: cover;
@@ -27,13 +36,23 @@
 
 /* Estilos para la sección "La Piel" */
 .la-piel {
-    background-color: #FFD700; /* Gold */
     text-align: center;
+}
+
+.la-piel p {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.la-piel img {
+    object-fit: cover;
+    object-position: bottom;
+
+    aspect-ratio: 2.5;
 }
 
 /* Estilos para la sección "Tiendas" */
 .tiendas {
-    background-color: #98FB98; /* Pale Green */
     display: flex;
     justify-content: space-around;
 }
