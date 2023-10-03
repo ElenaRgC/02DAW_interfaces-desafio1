@@ -12,7 +12,17 @@
 
 * {
     box-sizing: border-box;
+
 }
+
+:target {
+    margin-top: 5rem;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
 
 body {
     margin: 0;
@@ -99,6 +109,7 @@ header > * {
     color: var(--color-fondo);
 
     padding-inline: 5rem;
+    line-height: normal;
 }
 
 .logo {
@@ -160,6 +171,36 @@ main {
 
 section {
     margin-block: 4rem;
+}
+
+/* Estilos de las tarjetas */
+
+.tarjeta {
+    flex: 1;
+    text-align: center;
+    margin: 1rem auto;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta a {
+    margin: 0 auto;
+}
+
+.tarjeta img {
+    max-width: 250px;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+
+.tarjeta p {
+    height: 3rem;
+}
+
+.tarjeta button {
+    margin: 0 auto;
 }
 
 /* Estilos para el footer */

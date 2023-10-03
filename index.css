@@ -1,6 +1,7 @@
 /* Estilos para la sección "Sobre Nosotros" */
 .sobre-nosotros {
     display: flex;
+    gap: 2rem;
 
     align-items: center;
 }
@@ -13,34 +14,6 @@
 .productos {
     display: flex;
     justify-content: space-around;
-}
-
-.tarjeta {
-    flex: 1;
-    text-align: center;
-    margin: 1rem auto;
-
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.tarjeta a {
-    margin: 0 auto;
-}
-
-.tarjeta img {
-    max-width: 250px;
-    object-fit: cover;
-    aspect-ratio: 1;
-}
-
-.tarjeta p {
-    height: 3rem;
-}
-
-.tarjeta button {
-    margin: 0 auto;
 }
 
 /* Estilos para la sección "La Piel" */
