@@ -49,6 +49,7 @@ h1 {
 
 h2 {
     font-size: 1.95rem;
+    line-height: 2.2rem;
 }
 
 h3 {
@@ -58,6 +59,9 @@ h3 {
 button {
     border: none;
     padding: 0.5rem 1.5rem;
+    
+    height: 3rem;
+    width: fit-content;
 
     font-size: 1.2rem;
     font-family: "Libre Baskerville", serif;
@@ -72,12 +76,15 @@ button.secundario {
 }
 
 input[type="search"] {
+    height: 3rem;
+    padding-left: 2.5rem;
+
     background-color: white;
     background-image: url("img/icono-lupa.svg");
-    background-size: 25px;
+    background-size: 1.5rem;
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding-left: 40px;
+
 }
 
 /* Estilos para el header */
@@ -108,10 +115,17 @@ nav ul {
     margin: 0 auto;
     padding: 0.5rem 2rem;
 
+    font-size: 1.2rem;
     text-transform: uppercase;
+    font-family: "Playfair Display";
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
 
     background-color: rgb(238, 238, 238);
-    box-shadow: #ccc 1px 1px 2px;
+    box-shadow: #ccc 2px 2px 5px;
 
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -119,7 +133,6 @@ nav ul {
 
 .menu li {
     display: inline;
-    /* padding-inline: 0.25rem; */
 }
 
 .menu li::after {
